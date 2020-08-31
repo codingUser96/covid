@@ -1,0 +1,25 @@
+<h1>Covid Status in Tamil Nadu</h1>
+
+<div>
+  <table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">District</th>
+        <th scope="col">Active Cases</th>
+        <th scope="col">Confirmed Cases</th>
+        <th scope="col">Recovered Cases</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let x of options">
+      <tr>
+        <td>{{x.district}}</td>
+        <td>{{x.active}}</td>
+        <td>{{x.confirmed}}</td>
+        <td>{{x.recovered}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="float-right">&#169;Abarajithan</span>
+</div>
+
+<router-outlet></router-outlet>
